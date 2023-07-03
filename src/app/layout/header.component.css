@@ -1,0 +1,28 @@
+ul li a {
+    color: black;
+}
+
+nav {
+    /* position: relative; */
+    z-index: 2;
+}
+
+.row {
+    position: absolute;
+    top: 55px;
+    background-color: rgba(224, 224, 224, 0.942);
+    width: 100%;
+    /* z-index: 3; */
+}
+
+.row .nav-link {
+    color: black;
+}
+
+.nav-two {
+    position: fixed;
+    top: 55px;
+    background-color: rgb(212, 206, 206);
+    width: 100%;
+    z-index: 3;
+}
