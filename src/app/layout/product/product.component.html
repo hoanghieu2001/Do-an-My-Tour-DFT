@@ -1,0 +1,44 @@
+<section class="container ">
+    <div class="row">
+        <div class="card col-6">
+            <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '640px' }" [numVisible]="5">
+                <ng-template pTemplate="item" let-item>
+                    <img [src]="item.itemImageSrc" style="width: 100%;" />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                    <div class="grid grid-nogutter justify-content-center">
+                        <img [src]="item.thumbnailImageSrc" />
+                    </div>
+                </ng-template>
+            </p-galleria>
+        </div>
+        <div class="box-product col-6">
+            <div class="box2 " style="margin-left: 40px;">
+                <h2 class="text-center">Chuyến du lịch</h2>
+                <h3>Giá tour 3.300.000VND</h3>
+                <div class=" row">
+                    <button class=" col-6" style=" height: 50px; width: 150px;">Đặt ngay</button>
+                    <button class="col-6 ms-5" style="height: 50px; width: 150px;">Thêm vào giỏ hàng</button>
+                </div>
+                <h3>
+                    <i class="pi pi-wifi"> Free wifi</i>
+
+                </h3>
+            </div>
+
+
+            <div class="title">
+                <ul>
+                    <h4>Thông tin</h4>
+                    <li><a href="">Phòng ngủ gồm 2 giường</a></li>
+                    <li><a href="">View đẹp</a>
+                    </li>
+                    <li><a href="">Có cung cấp dịch vụ ăn uống ở nhà hàng</a></li>
+                    <li><a href="">Hỗ trợ các dịch vụ tiện ích khác</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>

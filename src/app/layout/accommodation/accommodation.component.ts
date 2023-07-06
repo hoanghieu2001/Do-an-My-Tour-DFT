@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-accommodation',
   templateUrl: './accommodation.component.html',
@@ -59,5 +58,12 @@ export class AccommodationComponent {
     'Wisconsin',
     'Wyoming'
   ];
+  bsValue = new Date();
+  bsRangeValue: Date[];
+  maxDate = new Date();
+  constructor() {
+    this.maxDate.setDate(this.maxDate.getDate() + 7);
+    this.bsRangeValue = [this.bsValue, this.maxDate];
+  }
 }
 

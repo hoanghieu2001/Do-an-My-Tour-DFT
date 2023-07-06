@@ -1,6 +1,298 @@
-<ng-template #customItemTemplate let-model="item" let-index="index">
-    <h5>This is: {{model | json}} Index: {{ index }}</h5>
-</ng-template>
+<section>
 
-<pre class="card card-block card-header mb-3">Model: {{selected | json}}</pre>
-<input [(ngModel)]="selected" [typeahead]="states" [typeaheadItemTemplate]="customItemTemplate" class="form-control">
+    <div class="  container mt-5">
+        <!-- <app-banner></app-banner> -->
+        <div class="list-item row  ">
+            <div class="item col-2 ">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/20/1687227865303-92e8a9f380d1ac6cc541dee7a4d49a88.png?tr=q-75,w-256"
+                    alt="">
+                <p>Chuyến đi và Danh vọng</p>
+            </div>
+            <div class="item col-2">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/20/1687227867984-3c8e84185751a99679e258b0e16bc914.png?tr=q-75,w-256"
+                    alt="">
+                <p>Chuyến đi và Danh vọng</p>
+            </div>
+            <div class="item col-2">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/20/1687227873526-2c86a7c100d5a4bd96603a7eac3ec60a.png?tr=q-75,w-256"
+                    alt="">
+                <p>Chuyến đi và Danh vọng</p>
+            </div>
+
+        </div>
+    </div>
+    <section class="container">
+        <h3>Tái khám phá bản thân ở Châu Á và những nơi khác</h3>
+        <div class="row">
+            <div class="col-4">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/14/1686721948003-7928a0b56734caaca663b9239cde96da.png?tr=q-75,w-427"
+                    alt="">
+                <div class="title" style="position: absolute;top: 30px;
+            left: 100px;">
+                    <h5 style="color: #fff;">Việt Nam</h5>
+                    <p style="color: #fff;">17,736 accommodations</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/29/1685329328194-3d7df8cb31d4a3bf69f10209ba8402ec.png?tr=q-75,w-427"
+                    alt="">
+                <div class="title" style="position: absolute;top: 30px;
+            left: 100px;">
+                    <h5 style="color: #fff;">Thái Lan</h5>
+                    <p style="color: #fff;">20,736 accommodations</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/14/1686722015787-18de277528bf9856fc61a3be4cfe4a4e.png?tr=q-75,w-427"
+                    alt="">
+                <div class="title" style="position: absolute;top: 30px;
+            left: 100px;">
+                    <h5 style="color: #fff;">Singapo</h5>
+                    <p style="color: #fff;">17,736 accommodations</p>
+                </div>
+            </div>
+            <div class="col-4 mt-4">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/29/1685328965749-d622f5f8496a6dc11d9b1aca65c6d58e.png?tr=q-75,w-427"
+                    alt="">
+                <div class="title" style="position: absolute;top: 30px;
+            left: 100px;">
+                    <h5 style="color: #fff;">Malaisia</h5>
+                    <p style="color: #fff;">17,736 accommodations</p>
+                </div>
+            </div>
+            <div class="col-4 mt-4">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/01/1685626590562-f7fc1564035ab9e353099a96c659b5c1.png?tr=q-75,w-427"
+                    alt="">
+                <div class="title" style="position: absolute;top: 30px;
+            left: 100px;">
+                    <h5 style="color: #fff;">Indonesia</h5>
+                    <p style="color: #fff;">17,736 accommodations</p>
+                </div>
+            </div>
+            <div class="col-4 mt-4">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/01/1685626793768-ea048e16aff039145ae995a58a35cffd.png?tr=q-75,w-427"
+                    alt="">
+                <div class="title" style="position: absolute;top: 30px;
+            left: 100px;">
+                    <h5 style="color: #fff;">Hàn Quốc</h5>
+                    <p style="color: #fff;">17,736 accommodations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <h3>Sống thoải mái ở những thành phố được yêu thích</h3>
+        <div class="row">
+            <div class="col-3">
+                <img class="mw-100"
+                    src=" https://ik.imagekit.io/tvlk/image/imageResource/2022/12/13/1670914161196-afbce60dd45c63d6c5bed755d16a8120.jpeg?tr=q-75,w-320"
+                    alt="">
+            </div>
+            <div class="col-3">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2022/12/13/1670914189698-b7723439f23156f14825ef5e5695cc26.jpeg?tr=q-75,w-320"
+                    alt="">
+            </div>
+            <div class="col-3">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2022/12/13/1670914145711-fc8b8f2cd80cbf7dd48de3ce415ae463.jpeg?tr=q-75,w-320"
+                    alt="">
+            </div>
+            <div class="col-3">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2022/12/13/1670914155982-3e98712315e9a68b9a942290be244fee.jpeg?tr=q-75,w-320"
+                    alt="">
+            </div>
+        </div>
+        <div class="more text-center">
+            <a class="" style="color: #0e0d0d;text-decoration: none;" href="">Xem thêm các khách sạn</a>
+        </div>
+
+    </section>
+    <section class="container">
+        <h3>Các địa điểm không thể bỏ qua</h3>
+        <p>Đi cùng người thân vừa vui vừa thích</p>
+        <div class="row">
+            <div class="col-3 card " style="padding: 5px auto;">
+                <img class=" mw-100"
+                    src="https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2000908871772/Sun-World-Ba-Na-Hills-in-Da-Nang--f46390c4-d9cf-4909-a400-3148af83c36e.jpeg?_src=imagekit&tr=c-at_max,h-569,q-60,w-320"
+                    alt="">
+                <div class="title">
+                    <h5>Vé Wonder Ba La Hills tại Đà Nẵng</h5>
+                    <i class="pi pi-shopping-bag"> 165.000 VND</i>
+                </div>
+            </div>
+            <div class="col-3 card">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2000908873783/Sun-World-Hon-Thom-Tickets-d272acd4-1ae4-4cd6-9533-ff578f023f9f.jpeg?_src=imagekit&tr=c-at_max,h-569,q-60,w-320"
+                    alt="">
+                <div class="title">
+                    <h5>Vé Sun Word Hòn Thơm</h5>
+                    <i class="pi pi-shopping-bag"> 240.000 VND</i>
+                </div>
+            </div>
+            <div class="col-3 card">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2000684219858/VinWonders-Nha-Trang-Tickets--0746eb29-67c4-420e-bbff-d9a1337f1d6b.jpeg?_src=imagekit&tr=c-at_max,h-569,q-60,w-320"
+                    alt="">
+                <div class="title">
+                    <h5>Vé Vinhome Nha Trang</h5>
+                    <i class="pi pi-shopping-bag"> 543.000 VND</i>
+                </div>
+            </div>
+            <div class="col-3">
+                <img class="mw-100"
+                    src="https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2000684220668/VinWonders-Phu-Quoc-Tickets-25dfef53-d71e-46c2-8578-839f9288f86b.jpeg?_src=imagekit&tr=c-at_max,h-569,q-60,w-320"
+                    alt="">
+                <div class="title">
+                    <h5>Vé Wonder Phú Quốc</h5>
+                    <i class="pi pi-shopping-bag"> 921.000 VND</i>
+                </div>
+            </div>
+        </div>
+        <div class="more text-center">Xem tất cả</div>
+
+    </section>
+    <section class="  container">
+        <h3 class="text-center">Tại sao nên đặt chỗ tại Snake-Store</h3>
+        <div class="row mt-3">
+            <div class="col-3">
+                <div class="img">
+                    <img src="https://s3-alpha-sig.figma.com/img/8adc/7222/d1dc80f67c916e5fa4e019a20637b9d4?Expires=1688342400&Signature=YDmioqKBeufFX~i0J1GSx1d~CKpamj1qrg~FQ6FLPM4yQuOo3A6EiRge1gvzR8-ylKBsr8Sh5R1lQ64aYTeaK1Zh53eYbOvv8T5EtBSNOMPT4dgyjbwWKJwSig-P~fIJPQzp2~jsqrL8w7ohbDh9wc9NotJR1qu-Nc~lqhdyUjkWA4vggGJ7xKWJk0pRUttYmXmrrWk6Au0Ds1oKCf4YqWVgEVf~eGD6NjtCUkljNDKcJzj~2-MnHfpiH-ISQlDcfX7~kmu6jLk0GAIyjfRpXuyft4PzkNlLmV8537UfH5DXrWtxEclWs1uqxaHHaLvkVTEiaLUpwD571XgG0FS21g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="">
+                </div>
+                <div class="title-img">
+                    <p>Giải pháp du lịch hoàn thiện</p>
+                </div>
+                <span>Giải pháp toàn diện- giúp bạn tìm chuyến bay và khách sạn khắp Việt Nam và Đông Nam Á một cách
+                    tiết
+                    kiệm</span>
+            </div>
+            <div class="col-3">
+                <div class="img">
+                    <img src="https://s3-alpha-sig.figma.com/img/27ef/6359/59ba5a859b23d8f136973030a09a5ae4?Expires=1688342400&Signature=d-UuSmZdIVss4sVIxPHj-~-DyLISs6xCZwYP0nAIADWx2n6D8mgxhKgpCuGtvlvQ5jjTAz~p-8rFw6XQmHHvvFAwtSreEDHRCovF-ZWvvh60l~px~CZDN6eJPtPelXvnu~inpf4L4JAs62q4-aeILKZY-Onwko5MDluuefw5gWIKtIBzvIMpr30EUu~IwL5Ehsj3SKydJSuFHT2NpaMyzGHYHQJEia3XifmVbVPObvFMEsrfLTyN7ozwiTPHX3GU1qvCp8tSpDFE~sYUzwcXOjQ8VQrbHMMCqRBfyzl1HsmG4m6ugQTqXt5TzaCdzEfPj5GlF9RA92P8HLJC3elEJw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="">
+                </div>
+                <div class="title-img">
+                    <p>Giá rẻ mỗi ngày</p>
+                </div>
+                <span>Giá bạn thấy sẽ là giá bạn trả! Dễ dàng so sánh khi không cần phải trả thêm chi phí ẩn</span>
+            </div>
+            <div class="col-3">
+                <div class="img">
+                    <img src="https://s3-alpha-sig.figma.com/img/422b/429c/db2259b4c00c518800a7903b68a19fdb?Expires=1688342400&Signature=qEIomIQsHDvWy6lCLL5QGWIjpYUo-NCRCxxguqczDGQZB6kOd~j3NLUhRVUtQ-W6h59SAboyfk~NMWWuJN~HVQw3zqR-DMhPErYzeJadXWAUTEUhQVo~EwlZTi9l7972ek6vEBm5fit~O1VEX1c2hMAtMje4cVDyo8SDaXEeIVfdP37goFjf~b9Ebdlx12APDZuZkNsyk69BUpObvvm05m1tbp5LOTTiHPIpEXVDkkN0pMbfQM8~8ZuK8Egn~qBBRGx5PyBozsUqAq4IQKH8uIvNrrhitmFy77vMv5L938vUmoxZoTfpiKimq~oIipcIUJh2OACncqTFjX9GtumVcA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="">
+                </div>
+                <div class="title-img">
+                    <p>Phương thức thanh toán an toàn và linh hoạt</p>
+                </div>
+                <span>Giao dịch trực tuyến an toàn với nhiều lựa chọn như thanh toán tại cửa hàng tiện lợi, chuyển khoản
+                    ngân
+                    hàng, thẻ tín dụng internet. Không tính phí giao dịch</span>
+            </div>
+            <div class="col-3">
+                <div class="img">
+                    <img src="https://s3-alpha-sig.figma.com/img/fa11/ffe4/0fc29f280564d941460a45062b0c2d47?Expires=1688342400&Signature=oG89giLL8EPj0k54o04HfI5jqX6LmWFAZuCXmzY3zkyAUiNt7fkEz7iOHoggDH5SBiVHlfN8HLvM1Cf33Xue6Tck50V2Fp9YiU6G3FVgTVp7qXHOYoXl-seM7p9ITK4BaUl6Orb9B8ESbxO5JywxAU4UH1FBQfWUq8q4gvI2zvFsTn4G5tIgMnCqCj~LGeBp1sF34cJGXreulH~huAhAD6sEdhai1ZG6xXSsECdlWkDiIgU3o1L2rxma4pE~8Q0F6N6xL7mDL0TPZBXAI9I7oJaLHZn1n0eWDzf4kVUDX0Qyhl4P1S0wthfrGIt8tPDJPv1ybBEimRsPN3dnxX38aQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="">
+                </div>
+                <div class="title-img">
+                    <p>Hỗ trợ 24/7</p>
+                </div>
+                <span>Đội ngũ nhân viên hỗ trợ khách hàng luôn sẵn sàng giúp đỡ bạn trong quá trình đặt vé</span>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <h3 class="text-center">Bạn muốn khám phá điều gì?</h3>
+        <div class="row">
+            <div class="col-3">
+                <ul>Các chặng bay và hãng bay</ul>
+                <li>Vé máy bay đi Đà Nẵng</li>
+                <li>Vé máy bay đi Phú Quốc</li>
+                <li>Vé máy bay đi Nha Trang</li>
+                <li>Vé máy bay đi Hà Nội</li>
+                <li>Vé máy bay đi Đà Lạt</li>
+                <li>Vé máy bay đi Hải Phòng</li>
+            </div>
+            <div class="col-3">
+                <ul>Các khách sạn hàng đầu</ul>
+                <li><a href="">Vé máy bay Sài Gòn - Hà Nội</a></li>
+                <li><a href="">Vé máy bay Sài Gòn - Phú Quốc</a></li>
+                <li><a href="">Vé máy bay Sài Gòn - Nha Trang</a></li>
+                <li><a href="">Vé máy bay Sài Gòn - Đà Nẵng</a></li>
+                <li><a href="">VÉ máy bay Sài Gòn - Đà Lạt</a></li>
+                <li><a href="">Vé máy bay đi Singapore</a></li>
+            </div>
+            <div class="col-3">
+                <p>Combo Vé máy bay và Khách sạn</p>
+                <li><a href="">Vé máy bay Hà Nội - Sài Gòn</a></li>
+                <li><a href="">Vé máy bay Hà Nội - Phú Quốc</a></li>
+                <li><a href="">Vé máy bay Hà Nội - Đà Nẵng</a></li>
+                <li><a href="">Vé máy bay Hà Nội - Nha Trang</a></li>
+                <li><a href="">Vé máy bay Hà Nội - Đà Lạt</a></li>
+                <li><a href="">Vé máy bay đi Sài Gòn</a></li>
+
+            </div>
+            <div class="col-3">
+                <p>Hoạt động Tham quan và giải trí</p>
+                <li><a href="">Vé máy bay Đà Nẵng - Hà Nội</a></li>
+                <li><a href="">Vé máy bay Đà Nẵng - Sài Gòn</a></li>
+                <li><a href="">Vé máy bay Hồ Chí Minh - BangKok</a></li>
+                <li><a href="">Vé máy bay Hồ Chí Minh - Singapore</a></li>
+                <li><a href="">Vé máy bay Hà Nội - BangKok</a></li>
+                <li><a href="">Vé máy bay Đà Nẵng - Hà Nội</a></li>
+            </div>
+        </div>
+    </section>
+
+    <section class="input-footer container">
+        <div class="row">
+            <div class="col-7" style="margin-top: 1.19rem;">
+                <!-- <i class="bi bi-envelope"></i> -->
+                <h4>Bạn muốn tiết kiệm tới 50% khi đặt phòng và đặt vé máy bay</h4>
+                <p>Nhập số điện thoại để Snake-tour có thể gửi đến bạn những chương trình khuyến mãi mới nhất</p>
+            </div>
+            <div class="col-5">
+                <input style="width: 297px; height: 30px;" type="number">
+                <button class="b-" style="background-color: #F36; margin-top: 2.06rem;"><a style="color: #fff;"
+                        href="">Đăng
+                        kí
+                    </a></button>
+            </div>
+        </div>
+    </section>
+    <section class="footer container">
+        <h3>SNAKE-TOUR</h3>
+        <div class="row">
+            <div class="col-4">
+                <ul>Công ty cổ phần du lịch Việt Nam Snake
+                    <li><a href="">Tổng đài chăm sóc:0329200397</a></li>
+                    <li><a href="">Email: hotro@Snaketour.com</a></li>
+                    <li><a href="">Văn Phòng: Tầng 8 tòa nhà Kim Ánh Hà nội</a></li>
+                    <li><a href="">Văn Phòng Hồ Chí Minh: Tầng 3, tòa nhà ACM, 96 Cao thắng,Quận 3</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul>Chính sách và Quy định</ul>
+                <li><a href="">Điều khoản và điều kiện</a></li>
+                <li><a href="">Quy định về thanh toán</a></li>
+                <li><a href="">Chính sách bảo mật thông tin</a></li>
+                <li><a href="">Quy chế hoạt động</a></li>
+            </div>
+            <div class="col-4 ">
+                <ul>Khách hàng và đối tác</ul>
+                <li><a href="">Đăng nhập</a></li>
+                <li><a href="">Tuyển dụng</a></li>
+            </div>
+        </div>
+    </section>
+</section>

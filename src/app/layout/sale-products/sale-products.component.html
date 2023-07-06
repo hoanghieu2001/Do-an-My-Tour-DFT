@@ -3,37 +3,6 @@
     <h2>FLASH SALE</h2>
     <p> Chương trình kết thúc trong</p>
   </div>
-
-
-
-  <!-- <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="false" [interval]="0" [indicatorsByChunk]="true"> -->
-  <!-- <section class="row">
-    <div class="col-3" *ngFor="let sale of sales;">
-
-      <img class="mw-100" [src]="sale.image" alt="image slide" style="display: block; width: 279px ;height: 155px; ">
-      <div class="carousel-caption">
-        <h4></h4>
-      </div>
-      <div class="title-img">
-        {{sale.title}}
-      </div>
-      <div class="star-vote">
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-      </div>
-      <div class="city">
-        {{sale.city}}
-        <p>{{sale.price}}</p>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- </carousel> -->
-  <!-- <input class="input" type="text" placeholder="Mời bạn nhập"> -->
-  <!-- {{sales[0].title}} -->
   <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="true" [interval]="0" [indicatorsByChunk]="true">
     <slide *ngFor="let sale of sales; let index=index">
       <img [src]="sale.image" alt="image slide" style="display: block; width: 279px ;height: 155px;">
@@ -43,13 +12,13 @@
         <div class="title-sale">
           {{sale.title}}
         </div>
-        <div class="star-vote">
+        <!-- <div class="star-vote">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
-        </div>
+        </div> -->
         <div class="city">
           {{sale.city}}
           <p>{{sale.price}}</p>

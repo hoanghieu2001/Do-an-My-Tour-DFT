@@ -50,9 +50,13 @@ import { QrComponent } from './qr/qr.component';
 // import { ProductComponent } from './product/product.component';
 // import { QRCodeModule } from 'angularx-qrcode';
 import { GalleriaModule } from 'primeng/galleria';
-import { ProductsComponent } from './products/products.component';
-import { AccommodationComponent } from './layout/accommodation/accommodation.component'
 
+import { AccommodationComponent } from './layout/accommodation/accommodation.component'
+import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { ProductComponent } from "./layout/product/product.component"
+import { PhotoService } from './layout/product/photoService';
+import { HotelComponent } from './layout/hotel/hotel.component';
 
 @NgModule({
     declarations: [
@@ -90,14 +94,19 @@ import { AccommodationComponent } from './layout/accommodation/accommodation.com
         MultiselectComponent,
         TourComponent,
         QrComponent,
-        ProductsComponent,
         AccommodationComponent,
+        ProductComponent,
+        HotelComponent,
 
 
 
 
     ],
     imports: [
+        ModalModule.forRoot(),
+        BsDatepickerModule.forRoot(),
+        // BsDatepickerModule,
+        TypeaheadModule,
         GalleriaModule,
         MultiSelectModule,
         CarouselModule.forRoot(),
@@ -106,7 +115,6 @@ import { AccommodationComponent } from './layout/accommodation/accommodation.com
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
-        HttpClientModule,
         HttpClientJsonpModule,
         ModalModule.forChild(),
         BsDropdownModule,
@@ -117,6 +125,6 @@ import { AccommodationComponent } from './layout/accommodation/accommodation.com
         SharedModule,
         NgxPaginationModule,
     ],
-    providers: []
+    providers: [PhotoService]
 })
 export class AppModule { }

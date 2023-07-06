@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { PhotoService } from './service/photoservice';
+import { Component } from '@angular/core';
 
+import { PhotoService } from './photoService';
 @Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.scss']
+  selector: 'app-product',
+  templateUrl: './product.component.html',
+  styleUrls: ['./product.component.scss']
 })
-export class ProductsComponent implements OnInit {
+export class ProductComponent {
   images: any[] | undefined;
 
   responsiveOptions: any[] | undefined;

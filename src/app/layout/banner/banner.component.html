@@ -5,8 +5,8 @@
       alt="">
   </div>
 </div> -->
-<carousel>
-    <slide>
+<carousel style="clear: both;">
+    <slide style="position: relative;">
         <img class="mw-100" style="height: 460px ;width: 100%;"
             src="https://s3-alpha-sig.figma.com/img/04b1/595b/cf81519049da9ae285e67cd5c7593b41?Expires=1688342400&Signature=iLVtzDWYPYhXYN7zoXDN0~DRgxxsOPKqB~QusgPm46wikISWoJDyubBo3Xxtg5tiFz4UJk1IBZ-pRJgAQEcwmxjno4pUrSyxun~enZmouZslHiB2~pa7C4wuI1-gOcEUdi5xbcg9IRRoDIzBQrHXFjW79FfbcXEms1Rffph6zf9KrTYS6LSmOlr2TFEr-RSHU93sd80BXC8AReiT850vJ6SYX7TzYnECgUWNkfw36DS~56vfgt6BxurMW3BWgEhcDuxZdMx8JtnV5PzcylbTlLeb1g5za1AGkXuFnNH7dGCQou1~vnRer-45Nqmp82vCNGtaAedw5oS9JrkwqxidJw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
             alt="">
@@ -30,5 +30,42 @@
 
         </div>
     </slide>
+    <div class="container "
+        style="width: 800px;left: 26%;top: 200px;  position: absolute; z-index: 2;background-color: aliceblue; border-radius: 0.7rem;">
+        <div class="row">
+            <div class="box1 col-6 " style="padding-left: 30px;">
+                <div class="item1">
 
+                    <ng-template #customItemTemplate let-model="item" let-index="index">
+                        <h5 style="height: 20px;">Tour: {{model | json}} Mã số: {{ index }}</h5>
+                    </ng-template>
+
+
+                </div>
+                <div class="item2 mt-2">
+                    <pre style="width: 300px; height: 30px ;padding-top: 2px;color: black; "
+                        class=" card-block card-header ">Địa điểm {{selected | json}}</pre>
+                    <input placeholder="Mời bạn chọn địa điểm du lịch" [(ngModel)]="selected" [typeahead]="states"
+                        [typeaheadItemTemplate]="customItemTemplate" class="form-control" style="width: 300px;">
+                </div>
+            </div>
+
+
+
+            <div class="box2 col-6 mt-2">
+                <p style="text-align: center;"><code></code> Thời gian xuất hành</p>
+                <div class="row">
+                    <div class="col-8 form-group mb-3">
+                        <input class="form-control mt-2" #drp="bsDaterangepicker" bsDaterangepicker
+                            [(ngModel)]="bsRangeValue" style="width: 270px; text-align: center;">
+                    </div>
+                    <div class="col-4  form-group">
+                        <button style="height: 35px; background-color: #FF3366 ;color: aliceblue;" class="btn  ms-4"
+                            (click)="drp.toggle()" [attr.aria-expanded]="drp.isOpen" type="button">
+                            Tìm kiếm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </carousel>

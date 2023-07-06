@@ -1,6 +1,6 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, TemplateRef } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -9,9 +9,12 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
 
-  constructor(
-    private router: Router
-  ) {
+  private router: Router
+  modalRef?: BsModalRef;
+  constructor(private modalService: BsModalService) { }
+
+  openModal(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template);
   }
 
   cacTourTrongNuoc() {
