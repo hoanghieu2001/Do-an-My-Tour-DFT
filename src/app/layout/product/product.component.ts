@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { PhotoService } from './photoService';
+import { PhotoService } from '../product/photoService'
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -14,7 +14,15 @@ export class ProductComponent {
   constructor(private photoService: PhotoService) { }
 
   ngOnInit() {
-    this.photoService.getImages().then((images) => (this.images = images));
+    // this.photoService.getImages().then((images) => (this.images = images));
+    this.photoService.getImages()
+      .then((images) => {
+        this.images = images;
+      })
+      .catch((error) => {
+        console.error('Lỗi khi lấy danh sách hình ảnh:', error);
+      });
+
     this.responsiveOptions = [
       {
         breakpoint: '1024px',

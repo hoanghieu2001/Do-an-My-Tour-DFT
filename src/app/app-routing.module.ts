@@ -11,6 +11,7 @@ import { ChangePasswordComponent } from './users/change-password/change-password
 import { HeaderComponent } from './layout/header.component';
 import { TourComponent } from './layout/tour/tour.component';
 import { AccommodationComponent } from './layout/accommodation/accommodation.component';
+import { HotelComponent } from './layout/hotel/hotel.component';
 @NgModule({
     imports: [
         RouterModule.forChild([
@@ -26,6 +27,7 @@ import { AccommodationComponent } from './layout/accommodation/accommodation.com
                         path: 'about', component: AboutComponent, canActivate: [AppRouteGuard]
                     },
 
+                    { path: 'about/khach-san', component: HotelComponent, canActivate: [AppRouteGuard] },
                     { path: 'about/cac-tour-du-lich', component: AccommodationComponent, canActivate: [AppRouteGuard] },
                     { path: 'about/cac-tour-trong-nuoc', component: TourComponent, canActivate: [AppRouteGuard] },
 

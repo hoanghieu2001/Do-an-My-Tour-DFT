@@ -7,8 +7,8 @@
 
 
     <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="false" [interval]="0" [indicatorsByChunk]="true">
-        <slide *ngFor="let i of carts; let index=index">
-            <img [src]="i.image" alt="image slide" style="display: block; width: 279px ;height: 155px;">
+        <slide class="col-3" *ngFor="let i of carts; let index=index">
+            <img class="mw-100" [src]="i.image" alt="image " style="display: block; width: 279px ;height: 155px;">
             <div class="carousel-caption">
             </div>
             <div class="list-sale">

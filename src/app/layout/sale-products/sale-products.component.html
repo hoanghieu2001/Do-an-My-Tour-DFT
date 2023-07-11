@@ -3,6 +3,47 @@
     <h2>FLASH SALE</h2>
     <p> Chương trình kết thúc trong</p>
   </div>
+  <div class="clock">
+    <div class="from-right">
+      <div class="title-time">Thời gian còn lại:</div>
+      <div class="countdownt">
+        <div class="box">
+          <span class="num" id="day-box">
+            {{ remainingTime?.days | number: '2.0' }}
+          </span>
+          <span class="text">Ngày</span>
+        </div>
+        <div class="box">
+          <span class="num" id="hour-box">
+            {{ remainingTime?.hours | number: '2.0' }}
+          </span>
+          <span class="text">Giờ</span>
+        </div>
+        <div class="box">
+          <span class="num" id="minute-box">
+            {{ remainingTime?.minutes | number: '2.0' }}
+          </span>
+          <span class="text">Phút</span>
+        </div>
+        <div class="box">
+          <span class="num" id="second-box">
+            {{ remainingTime?.seconds | number: '2.0' }}
+          </span>
+          <span class="text">Giây</span>
+        </div>
+      </div>
+      <div class="box-sale-content">
+        <div class="box-sale-person">
+          <p class="content-sale-box">QUÀ TẶNG ĐẶC BIỆT:</p>
+        </div>
+        <div class="box-sale-content">
+          <div class="box-sale-person">
+            <p>Tặng <b>500K </b> cho mỗi chuyến đi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="true" [interval]="0" [indicatorsByChunk]="true">
     <slide *ngFor="let sale of sales; let index=index">
       <img [src]="sale.image" alt="image slide" style="display: block; width: 279px ;height: 155px;">

@@ -57,7 +57,10 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { ProductComponent } from "./layout/product/product.component"
 import { PhotoService } from './layout/product/photoService';
 import { HotelComponent } from './layout/hotel/hotel.component';
-
+import { SaleSummerComponent } from './layout/sale-summer/sale-summer.component';
+import { FormInformationComponent } from './layout/form-information/form-information.component';
+// import { MatFormFieldModule } from '@angular/material/form-field';
+// import { MatCardModule } from '@angular/material/card';
 @NgModule({
     declarations: [
 
@@ -97,34 +100,40 @@ import { HotelComponent } from './layout/hotel/hotel.component';
         AccommodationComponent,
         ProductComponent,
         HotelComponent,
+        SaleSummerComponent,
+        FormInformationComponent,
+
 
 
 
 
     ],
-    imports: [
-        ModalModule.forRoot(),
-        BsDatepickerModule.forRoot(),
-        // BsDatepickerModule,
-        TypeaheadModule,
-        GalleriaModule,
-        MultiSelectModule,
-        CarouselModule.forRoot(),
+    imports:
+        [
+            //     MatCardModule,
+            // MatFormFieldModule,
+            ModalModule.forRoot(),
+            BsDatepickerModule.forRoot(),
+            // BsDatepickerModule,
+            TypeaheadModule,
+            GalleriaModule,
+            MultiSelectModule,
+            CarouselModule.forRoot(),
 
-        ButtonModule,
-        CommonModule,
-        FormsModule,
-        ReactiveFormsModule,
-        HttpClientJsonpModule,
-        ModalModule.forChild(),
-        BsDropdownModule,
-        CollapseModule,
-        TabsModule,
-        AppRoutingModule,
-        ServiceProxyModule,
-        SharedModule,
-        NgxPaginationModule,
-    ],
+            ButtonModule,
+            CommonModule,
+            FormsModule,
+            ReactiveFormsModule,
+            HttpClientJsonpModule,
+            ModalModule.forChild(),
+            BsDropdownModule,
+            CollapseModule,
+            TabsModule,
+            AppRoutingModule,
+            ServiceProxyModule,
+            SharedModule,
+            NgxPaginationModule,
+        ],
     providers: [PhotoService]
 })
 export class AppModule { }
