@@ -29,7 +29,7 @@ export class SaleProductsComponent implements OnInit, OnDestroy {
         minutes: Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60)),
         seconds: Math.floor((timeDifference % (1000 * 60)) / 1000)
       };
-
+      debugger
       if (timeDifference <= 0) {
         this.stopCountdown();
       }
