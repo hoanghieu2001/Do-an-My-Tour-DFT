@@ -16,27 +16,27 @@ export class PriceCartComponent implements OnInit {
     {
       id: 1,
       title: "Côn Đảo",
-      image: "https://s3-alpha-sig.figma.com/img/0ed6/3a11/c315a4f436fa076bd86dd72ab1c3b988?Expires=1690156800&Signature=jJNx1VtAabl7CkY9M9gxoGFEDIirrcSClWhyhTNn0AJdORvhyRfvztxye4p7MoWMQErI0JF-J3hSWgiMzwX~esQW7pvklxl4qqArBSJPUre1CtJXci1z81qE-EqdbOVbffF23p-Wuc-CgdQ91Z7Em86xg-PjYzeQUuCzBkOvVlygPnrWyW2zQwEqZQmXu9xG0HqFnFYWW-ZPjY7NabzmtSjUQREzpzvFMMbG3hgAH9oq8jm83oiOiQhk8~Qq~QeZauO9b~4uByeEELjzErChOnXeDFIspFjFqjqCLFo57uawDIFQmHA5MjRyrXO40zCHS7v0a4RzK1nbMDibVQ8obw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      image: "../assets/img/condao.png",
     },
     {
       id: 2,
       title: "Hà Giang",
-      image: "https://s3-alpha-sig.figma.com/img/8331/592b/c05d1cbaa1cd9b7eb8eb3802c3248bb7?Expires=1690156800&Signature=g~~IplMeOZ5ayp7YqH~7-9L6gPC5rCjcwpgj0pVvW14SdXu1DkOXyED9OZ90BLhYhZ8bMkNf-Ik4zv8kbWA0SU1~jKgmvwZqW9Mb3MQGEEn~jOL6af8yki1tphWWVXPVgtE2fpf~gp31HZDqCZOiBAxEhI071s~R6BaSYApHZ0gLQDRqNgqnzTcoONO5WlVRb8190Rmy1nQRyLtSC6t6k4nQxNHJkhmkstJ3uAlawA5F1Cye9nd54wK7PXLldkml0UONY1k8u~0QhOV9A94ibSq17O~k1O1~RhKuPphybCD8tiL38v5-npVlG~qtZ1gmJCs9SeBbCneQcTXUMgo9mw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      image: "../assets/img/hagiang.png",
     },
     {
       id: 3,
       title: "Phú Quốc",
-      image: "https://s3-alpha-sig.figma.com/img/e007/55c3/c3123cb5af6cbaf151232846c4d939d6?Expires=1690156800&Signature=FOETjzY0h3Bbrf85NYB~BIlDxB13OvUNeLAI7jWCyt~YuHtoSVtVfrXOXIdo~mo7QMusoIllWbNugfzRWtzv~~ciUgNoWmM-U4bN8tVizaQVT1~h38WAe6v-B~IW~3MEtCYTB6r6HwYkv~AfZePx-KrxHM5uK3qhAY45RlaubP6qAbwE2bekAlY2H4baltyuZOoZtE8JfCGUpYi7Cu6Ax6sckfCYA250UKXeGq89q8jrHjgaFjylxUC3g6QFkLoH09Owlvue2QSTLuQWq8XemuA-3z0vaPv6j0kf5TP8PgF7BZbS5YEiCdzmFq7wR~VlJ72t8Es261ExYvOmlBIE-A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      image: "../assets/img/phuquoc.png",
     },
     {
       id: 4,
       title: "Đài Loan",
-      image: "https://s3-alpha-sig.figma.com/img/e5b5/c20d/0980a78e7a6396f32373edb0478a0cbf?Expires=1690156800&Signature=Oow1xRiK7eNlq4pp91QHJE55-Zw-iVdHTuc9X5p0cDgl4cLngdGsg90fbXor1-kbMXJCWhsTrCBPGGai33TTaoXSevJiTJtNIi5KEYwKL-85ZOMplU0HWhuudX0~cDDqfeLv6QoCxizOkqtKc2F8Evt5dLzyRDLqkqqhPidwiKvcEtgocelO2fnB45~sEUQUiIM4DJXiyxc-upzdVPwUDS5J7bY3DLxIz9m4I3lMyYQfJbnAIGwNb7O0vO0wCVgkWfRJEkSZd~wBkNLUH04GRzfTk2tpMftB~nzf2OBASlb0SAVkmaanRabm-GkC0Y-mMfwarpxHqwmw8TH4KtZejQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      image: "../assets/img/dailoan.png",
     },
     {
       id: 5,
       title: "Hàn Quốc",
-      image: "https://s3-alpha-sig.figma.com/img/b3c6/6540/28975952fe9f2bb44235879c3cd6e9d8?Expires=1690156800&Signature=N5PVJg7T1girVRtDIq-f4akvDHyF99mDxGU4xaUIsn8maBWzR~Qg0NsnPrwj~TgteL0Th1DXHmKEedFBQ6ZnrH7pvJ0a1lkZN2HHA4a9TECf4XO7WlmSVyE0pPVxnv-ZE66YjHCF-T~pINVS8jMLp6H-9MhQ9mhWBtsNguMKfdg0NYDuRbYXus1~-rYzb~qcs-dEID1tfoJAeeLhm1mEGY3x8bElu9ef0bJz17o2NzTtGAQf6a1NoKdy0gOZwBO7tin~JNFmQo5t5cWO2iTf4QEc~iwTkfasiBQ7-THxwyD4u-viWwFR3xHa0EceCQMOjTzHT7vx4lPrSVlea~G9TQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      image: "../assets/img/haquoc.png",
     },
     {
       id: 6,

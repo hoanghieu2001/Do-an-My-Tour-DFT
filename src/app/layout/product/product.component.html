@@ -1,7 +1,7 @@
 <app-banner></app-banner>
-<section class="container ">
+<section class="container" style="margin-top: 105px;">
 
-    <div class="row">
+    <div class="row ">
         <div class="card col-6">
             <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions"
                 [containerStyle]="{ 'max-width': '640px' }" [numVisible]="5">
@@ -14,14 +14,7 @@
                     </div>
                 </ng-template>
             </p-galleria>
-            <div class="row mt-4">
-                <a href="" class="btn btn-primary col-6 me-5 ms-3"
-                    style="height: 50px;width: 250px;margin-left: 80px;color:  #fff;font-size: 20px;">Thêm vào giỏ
-                    hàng</a>
-                <a href="" class="btn btn-primary col-6"
-                    style="height: 50px;width: 250px;margin-left: 80px;color:  #fff;font-size: 20px;">Thanh toán
-                </a>
-            </div>
+
 
         </div>
         <div class="box-product col-6">
@@ -49,18 +42,40 @@
                     <li><a href="">Hỗ trợ các dịch vụ tiện ích khác</a></li>
                 </ul>
             </div> -->
-            <div class="title-product">
+            <div class="title-product  ms-3">
                 <h3>Hà Nội -Nha Trang 3 ngày 2 đêm</h3>
                 <ul>
                     <h5>Thông tin tour</h5>
-                    <li>Mã tour:1518</li>
+                    <li>Mã tour : 1518</li>
                     <li>Thời gian: 3 ngày 2 đêm</li>
                     <li>Thời gian khởi hành 11/7 - 14/7/2023</li>
                     <li>Vận chuyển: Xe du lịch</li>
-                    <li>XUất phát từ hà nội</li>
+                    <li>Xuất phát từ hà nội</li>
                 </ul>
             </div>
             <div class="schedule">
+                <ul>
+                    <h4>Lịch trình</h4>
+                    <li>Combo du lịch Nha Trang 3 ngày 2 đêm ở khách sạn gần trung tâm mang đến mức giá bất ngờ bạn và
+                        gia đình sẽ được tận
+                        hưởng kỳ nghỉ sang chảnh chuẩn 3 Sao.</li>
+                    <li>Bao gồm 1 vé máy bay khứ hồi từ Hà Nội - Nha Trang của hãng hàng không Bamboo Airways. Vé đã gồm
+                        7kg hành lý xách tay và
+                        20kg hành lý.</li>
+                    <li>Giá tiền : 4.000.222 VND</li>
+
+                </ul>
+            </div>
+
+            <div class="row mt-4">
+                <a href="#" class="btn btn-primary col-6 me-5 ms-3"
+                    style="height: 50px;width: 250px;margin-left: 80px;color:  #fff;font-size: 20px;">Thêm vào giỏ
+                    hàng</a>
+                <a href="" class="btn btn-primary col-6" routerLink="../thanh-toan"
+                    style="height: 50px;width: 250px;margin-left: 80px;color:  #fff;font-size: 20px;">Thanh toán
+                </a>
+            </div>
+            <!-- <div class="schedule">
                 <ul>
                     <h4>Lịch trình</h4>
                     <li>Combo du lịch Nha Trang 3 ngày 2 đêm ở khách sạn gần trung tâm mang đến mức giá bất ngờ bạn và
@@ -78,9 +93,10 @@
                         không làm chuyến khám
                         phá của quý khách kém đi phần thú vị.</li>
                 </ul>
-            </div>
+            </div> -->
 
         </div>
 
     </div>
 </section>
+<app-footer></app-footer>

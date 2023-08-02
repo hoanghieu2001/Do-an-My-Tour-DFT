@@ -12,6 +12,9 @@ import { HeaderComponent } from './layout/header.component';
 import { TourComponent } from './layout/tour/tour.component';
 import { AccommodationComponent } from './layout/accommodation/accommodation.component';
 import { HotelComponent } from './layout/hotel/hotel.component';
+import { FormInformationComponent } from './layout/form-information/form-information.component';
+import * as path from 'path';
+import { ProductComponent } from './layout/product/product.component';
 @NgModule({
     imports: [
         RouterModule.forChild([
@@ -28,13 +31,22 @@ import { HotelComponent } from './layout/hotel/hotel.component';
                     },
 
                     { path: 'about/khach-san', component: HotelComponent, canActivate: [AppRouteGuard] },
-                    { path: 'about/cac-tour-du-lich', component: AccommodationComponent, canActivate: [AppRouteGuard] },
+                    {
+                        path: 'about/cac-tour-du-lich', component: AccommodationComponent, canActivate: [AppRouteGuard],
+                    },
+                    {
+                        path: 'about/chi-tiet-khu-du-lich', component: ProductComponent, canActivate: [AppRouteGuard]
+                    },
+                    {
+                        path: 'about/thanh-toan', component: FormInformationComponent, canActivate: [AppRouteGuard]
+                    },
                     { path: 'about/cac-tour-trong-nuoc', component: TourComponent, canActivate: [AppRouteGuard] },
 
                     { path: 'update-password', component: ChangePasswordComponent, canActivate: [AppRouteGuard] },
 
                 ]
-            }
+            },
+            // { path: 'about/chi-tiet-khu-du-lich', component: FormInformationComponent, canActivate: [AppRouteGuard] },
         ])
     ],
     exports: [RouterModule]

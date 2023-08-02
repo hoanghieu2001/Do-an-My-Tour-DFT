@@ -29,7 +29,6 @@ export class SaleProductsComponent implements OnInit, OnDestroy {
         minutes: Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60)),
         seconds: Math.floor((timeDifference % (1000 * 60)) / 1000)
       };
-      debugger
       if (timeDifference <= 0) {
         this.stopCountdown();
       }
@@ -64,22 +63,22 @@ export class SaleProductsComponent implements OnInit, OnDestroy {
   ];
   sales = [
     {
-      image: "https://s3-alpha-sig.figma.com/img/91b8/7c97/3fedd0c420317215d589442c6625147e?Expires=1690156800&Signature=mjPUL33LvoBEEwCTeMOH08aL9ZWravOLB6-jwG2QwtEj8XQUxmK6ogJdBmDrHDnfjtNCAZUH8Dbd0g0ythTl3m5mp01b1I5IX2578yUaJgS9iBlLOP62kAZnIvACTeS~tbC5n4ES~lds2zcn3CC~5q9ZC3c8idyYVLvRXZSqiffCt37jhcug27K3A2QIIteAhJA6JRNJlNhPxuxN0i-f3X7F2wG~SqVDR6PQdNJSc5-YlDBeRHAQ6FUFuaE7uCRtRYUY5S5sSALDtJjo-Lj3mfR~Wyd9JM5KWYlViNykySbelmXH-j4dBXtq2XrRwCUWsnJGa33GgJRP5vkexd5nAw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      image: "https://s3-alpha-sig.figma.com/img/91b8/7c97/3fedd0c420317215d589442c6625147e?Expires=1691971200&Signature=gkJT2jz6PlGOcBijDJBk7-OYavjejuOhVFE1LV6ViSxAyVe9gasCpkl6~BcCjhd19EINILPn827YATFLWOpOqjzDBWqd3MI0bK4RiQs2CZVtkdfAIyUHSwPiM9HqXk8kDKa43k5qT3x3K9-Nz9gSnrtdH9HsgO1Y07XAhfiLxf9W7I~qQulntVI7X1Gy22LMakZOw0xYean7gfNm2XB5wzHhA7LOGlea2EQT2i8cUNEGCArOyeSRkUd10xDPmoUFpQIuF~vWBhvfFg~bLBm24JwQKoEsXzorZu1eWSo0Yr5JXwEwzeOzgW0hwG4pt674EJStrzdCtu0683MNvbhWNw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
       title: "Khách sạn Imper Vũng Tàu",
       city: "Thành phố Vũng Tàu",
       status: "Rất tốt",
       price: "2.492.573 VND"
     },
     {
-      image: "https://s3-alpha-sig.figma.com/img/0cb4/50f1/f7518579f49908d04e771b6b285dbf61?Expires=1690156800&Signature=Uc9c-0q5xZ39Bd25A9RsDA8rBakPTLcQYamHl9a8HSZgKqGD9PhSPkXJ6OsRGvu7X~DR63a4FdxTP63W~gebp25rgTJ318KO1qCbbW0uE45jczlHGmnKB~W4buEda2Q-adi8b3~PHpppXXI6M1pxyHsGs~EBJpsBoKjgXAyTItjsuM3RZRYkq6VCXLD6txAktPVG2TYybVetcgXumXy4F~WH1wp9PUAhtcoJMJwBhSt4BWCPNTpBey3e5vxyVcCK0h93ZEgSlByYuI6FFh4grEm24K2XAGltE6FN6vMDbnvZktwzZxwkxkva1CVGRS2Uk5D3pku6pdmzcxVaLHCgrw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      title: "Đà Nẵng - Mikazuki Japanese Resort & Spa",
+      image: "https://s3-alpha-sig.figma.com/img/0cb4/50f1/f7518579f49908d04e771b6b285dbf61?Expires=1691971200&Signature=lxA9VEbK2WSSrk9JIjvQxs9tuhDZYda7jGmt~-LKZq-NNyT~BtB37SAz22KWX2Wcn0CbPZ7SydfidvrD38u3~p3pZczeExbtnWyG4EKx6vUhqXv1YslaqLFKXH--nYkUwX5FyP5KCBT9sHGLZUHOM8e9QETdf0gdmkYJATen3I7v2z7raoxFb4rTTfZ6t-FjUtLmiKSwzNk66iaeSP4RtfThuGcPukrvrJOUyoTrKxQXvTgHsSxfPW09Ln-WubjP-UquVViPMh7BMnyUMU2izEkxdz9URskG9JyV8viyAMWOaASmY9v3qUok9xYY0kqIwe2tKiXALVpIxu8fBWDJqA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      title: "Đà Nẵng - Mikazuki Japanese Resort",
       city: "Quận Liên Chiểu",
       status: "Tuyệt vời",
       price: "2.121.154 VND"
 
     },
     {
-      image: "https://s3-alpha-sig.figma.com/img/c3af/847a/a26493555425f86d4f7443d12cccdac6?Expires=1690156800&Signature=FJfue57m6-L-rZoISiDAMcmppJP52llsrLsHFISxzRaaT7SfGpjYRdPfGTh0gOE082eXHAEHCLO1i63~NluFeE5LkFVM88nBn-HNB-Ct~1FCmUMizeOK8NxOzznul-ptn73cLBe~zP6UvrA6kFKrnOCQek3XnvMhMVaMaOC7yTOGdwWvwqtkVkUxoQ72zWb~v09kG4Ago8xeVwg3KqbNCMOOfovqsevpzmOKn7mO4s1JtGCuTc2x0sSGSk1v~6IFsthgb32ZRhhgEUkTecizTgPF2-l6euBGYCgItn6aO1kK2aalKw3H0Cz8EMvOtMYpKG-VRR3jWXmJ2ZzKOvsIXA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      image: "https://s3-alpha-sig.figma.com/img/c3af/847a/a26493555425f86d4f7443d12cccdac6?Expires=1691971200&Signature=kMIdXBzxiDPxXVfqRzju0vnZs~PgsAiqEo4lIi9NxA58~L0KcDCQGjLYqiFCioSqyxIAGriOsHX-kk5P-WK0zF2iDzmFTHRHkVfj7FjQfSOS60bLAasvpBx0RrwrhKv~VjpOnDxYQYynxSVZ-~LNUoNngnuwnwmMHB3xXtPME3R-c3dIUIrtSjXql7WJKLR0XwYd169NWx8uNhquvKwt8Eh~plR3KbK4gFaRj3PRGQyqslFXCQVUOXvFcJsDKvuSMGHZvBo07LU4x-IRgelywdzVmYLsygLNzDQW27FnEIKaDAR8NXCW2Lzq0YMApHUN22fix6KykMCk2BpWsoOZug__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
       title: "Khu nghỉ dưỡng Melia Núi Ba Vì ",
       city: "Huyện Ba Vì",
       status: "Tuyệt vời",
@@ -87,7 +86,7 @@ export class SaleProductsComponent implements OnInit, OnDestroy {
 
     },
     {
-      image: "https://s3-alpha-sig.figma.com/img/7a1c/e011/764ca9e284c24a9a701e91d043cef1d7?Expires=1690156800&Signature=S9ZhUi9z2--E61wtj-gL1mz3a4ANVeQdBzX8GiP6Ac0Qo5-JyTFHdMmPXzAEyv5G-AOKyNjtbPHaywSPCGE3eIZYhZ116yWIPKMtchhHy3bhrY5Zgt3jOuJIVPBmvvRKRaipN4qCyqF0LjsV8Q6TTce5G~krOIUOLzgvkKc9AJYmzZx-PLQSyGS-~YNDtcPjJSkDxII6FrT9T11spMkF~LwtwFRCfbRxIY4L~tNxBo6kqM-SgBLsPdB~i9tYeSUdiIHknCmh~3SrlxZncsUuxMufDyhB-1hswH93IS0UVGKMa1NcUVHXlfv-NEaYrYnbqj76-mwWoI2KnCLN73A8JA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      image: "https://s3-alpha-sig.figma.com/img/7a1c/e011/764ca9e284c24a9a701e91d043cef1d7?Expires=1691971200&Signature=i7gb~vghsGb1SFa-wklDmSLIaI~V9J-OsQSYzLoZboGL05i7vbqrL~D9xp6YF39jlAgmePo800G6MkKx9O4NG3Kt7C1fR2T1eBDl2lN0ejTudoljMB2UXoiLhrdZdloBR5RxfgugpCsvYX0h0GFLHJFsQoMBuJjiigH8MXgcTOZkrAG9SheBya7S8kLqoRqVR5gONmVMfEpbWsVtuZj2yV7oNm6tRG9rfGCxyCl~jnh8Og-o6nuQ7vCuusHkPqeKLVO9abnepv8hm-hQKsyvCyIhVThVBYCQlQMXMhVcIus-~s~Rth2HVwRZ4K91vgGU30rXTUjoHo4sp95s19YdkQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
       title: "InterContinental Phú Quốc ",
       city: "Phú Quốc",
       status: "Tuyệt vời",

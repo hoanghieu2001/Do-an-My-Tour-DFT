@@ -3,7 +3,7 @@
         <section class=" row ">
             <div class="card col-8">
                 <div class="title row pt-2">
-                    <h4 class="col-10">Thông tin liên hệ (nhận vé/phiếu thanh toán)</h4>
+                    <h4 class="col-9 me-5 ">Thông tin liên hệ (nhận vé/phiếu thanh toán)</h4>
                     <button class="col-2 btn btn-primary">
                         Lưu
                     </button>
@@ -11,11 +11,11 @@
                 <div class="row">
                     <div class="box1 col-6">
                         <h5>Họ </h5>
-                        <input type="text" placeholder="Nhập họ">
+                        <input class="ps-2" type="text" placeholder="Nhập họ">
                     </div>
                     <div class="box1 col-6">
                         <h5>Tên đệm</h5>
-                        <input type="text" placeholder="Nhập tên đệm">
+                        <input class="ps-2" type="text" placeholder="Nhập tên đệm">
 
                     </div>
 
@@ -23,17 +23,17 @@
                 <div class="row">
                     <div class="box1 col-6">
                         <h5>Điện thoại di động </h5>
-                        <input type="text" placeholder="Nhập họ">
+                        <input class="ps-2" type="text" placeholder="Nhập họ">
                     </div>
                     <div class="box1 col-6">
                         <h5>Email</h5>
-                        <input type="text" placeholder="Nhập tên đệm">
+                        <input class="ps-2" type="text" placeholder="Nhập tên đệm">
                     </div>
                 </div>
                 <h3>Thông tin khách hàng</h3>
                 <section class="">
                     <div class="title row">
-                        <h5 class="col-10">Người lớn</h5>
+                        <h5 class="col-9 me-5">Người lớn</h5>
                         <button class="col-2 btn btn-primary">
                             Lưu
                         </button>
@@ -53,19 +53,18 @@
                 <div class="row">
                     <div class="box1 col-6">
                         <h5>Họ và tên </h5>
-                        <input type="text" placeholder="Nhập họ">
+                        <input class="ms-2 ps-2" type="text" placeholder="Nhập họ">
                     </div>
                     <div class="box1 col-6">
                         <h5>Số căn cước</h5>
-                        <input type="text" placeholder="Số căn cước">
+                        <input class="ps-2" type="text" placeholder="Số căn cước">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-6">
                         <h5>Ngày sinh</h5>
-                        <div class="col-xs-12 col-6 col-md-4 form-group mb-3">
-                            <input placeholder="Mời bạn nhập ngày sinh" class="form-control" #dp="bsDatepicker"
-                                bsDatepicker>
+                        <div class="col-xs-12 col-6 col-md-4 form-group  ">
+                            <input class="ps-2" placeholder="Mời bạn nhập ngày sinh" #dp="bsDatepicker" bsDatepicker>
                         </div>
                     </div>
                     <!-- <div class="col-xs-12 col-12 col-md-3 form-group mb-3">
@@ -74,11 +73,11 @@
                                 </div> -->
                     <div class="col-6">
                         <h5>Quốc tịch</h5>
-                        <input type="text" placeholder="Quốc tịch">
+                        <input class="ps-2" type="text" placeholder="Quốc tịch">
                     </div>
                 </div>
             </div>
-            <section class="col-4 pt-3 ps-4 card" style="height: 300px;">
+            <section class="col-3 pt-3 ps-4 card ms-4" style="height: 300px;">
                 <i class="fas fa-plane-departure">
                     <span style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Ha Noi - Da Lat</span>
                     <a style="float: right;font-family: 'Times New Roman', Times, serif; font-size: 20px;">Chi
@@ -170,7 +169,7 @@
                     <button style="background-color: #fff; color: black;" id="button-animated" dropdownToggle
                         type="button" class="btn  " aria-controls="dropdown-animated ">
                         <p style="float: left;">Tổng giá tiền mà bạn phải bỏ ra</p> <span class="caret">
-                            <p style="float: right;">881.000 VND</p>
+                            <p style="float: right;">881.000 VND <i class="fas fa-angle-down"></i></p>
 
                         </span>
 
@@ -194,7 +193,7 @@
                 </div>
             </div>
         </section>
-        <button type="button" class="btn btn-primary" style=" width: 150px;">
+        <button type="button" class="btn btn-primary ms-3" style=" width: 150px;margin-bottom: 85px; ">
             Thanh toán
         </button>
 
@@ -246,5 +245,6 @@
             </mat-card-content>
         </mat-card> -->
     </div>
-    <app-footer></app-footer>
+
 </div>
+<app-footer></app-footer>

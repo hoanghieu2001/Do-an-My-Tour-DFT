@@ -1,14 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, TemplateRef } from '@angular/core';
+import { Router } from '@angular/router';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'app-tour',
   templateUrl: './tour.component.html',
-  styleUrls: ['./tour.component.scss']
+  styleUrls: ['./tour.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+
 })
 export class TourComponent implements OnInit {
   ngOnInit(): void {
 
   }
+
   listTour = [
     {
       id: 1,
@@ -55,4 +60,14 @@ export class TourComponent implements OnInit {
     { color: 'light' },
     { color: 'dark' }
   ];
+  khudulich() {
+    this.router.navigateByUrl('/app/about/chi-tiet-khu-du-lich');
+  }
+  modalRef?: BsModalRef;
+  constructor(private modalService: BsModalService,
+    private router: Router,
+  ) { }
+
+
+
 }

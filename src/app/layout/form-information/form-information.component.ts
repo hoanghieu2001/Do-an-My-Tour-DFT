@@ -1,6 +1,7 @@
 import { Component, HostListener, ViewChild } from '@angular/core';
 import { BsDatepickerDirective } from 'ngx-bootstrap/datepicker';
 import { BsDropdownConfig } from 'ngx-bootstrap/dropdown';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form-information',
@@ -14,6 +15,8 @@ export class FormInformationComponent {
   onScrollEvent() {
     this.datepicker?.hide();
   }
+  private router: Router
+
 
 
 }

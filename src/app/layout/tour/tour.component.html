@@ -1,8 +1,8 @@
 <!-- <app-header></app-header> -->
 <app-banner></app-banner>
-<div class="main container">
+<div class="main container " style="padding-top: 30px;">
     <div class="title text-center">
-        <h2>Tour du lịch trong nước</h2>
+        <h2 style="">Tour du lịch trong nước</h2>
 
     </div>
     <div class="container">
@@ -27,14 +27,16 @@
 
                             </div>
                         </div>
-                        <a href="" style="font-weight: 700;"> <button
-                                style="margin-top: 010px ; width: 120px;height: 40px;">Xem
+                        <a style="font-weight: 700;" routerLink="../chi-tiet-khu-du-lich" style=" cursor: pointer;"
+                            class="dropdown-item" href="#"> <button
+                                style="margin-top: 10px ; width: 120px;height: 44px ;  border-radius: 10px; border:1px solid #ff3366;background-color: #ffffff;">Xem
                                 thêm</button></a>
 
 
                     </div>
                 </div>
             </ng-container>
+
 
         </div>
     </div>
@@ -43,60 +45,18 @@
             <h4 class="text-center box2" style="padding-top:15px ;">Hãy để lại email để nhận những thông tin ưu đãi tốt
                 nhất</h4>
             <div class="box1 text-center">
-                <input style="width: 300px; height: 35px;" class="mt-3" type="text" placeholder="Mời bạn nhập email">
-                <a href=""><button style="height: 35px;"> Đăng kí ngay</button></a>
+                <input
+                    style="width: 300px; height: 44px; border-radius: 10px;padding-left: 5px;margin-top: 10px; border: #ff3366 solid 1px;"
+                    class="mt-2 me-2" type="text" placeholder="Mời bạn nhập email">
+                <a href=""><button class="btn"
+                        style="height: 44px;border-radius: 10px;color: #ff3366;border: 1px solid #ff3366;background-color: #fff;margin-bottom: 8px;">
+                        Đăng kí ngay
+                    </button>
+                </a>
             </div>
         </div>
     </section>
-    <!-- <section class=" m-5 ">
-        <h3 class="text-center">Tại sao nên đặt chỗ tại Snake-Store</h3>
-        <div class="row mt-3">
-            <div class="col-3">
-                <div class="img">
-                    <img src="https://s3-alpha-sig.figma.com/img/8adc/7222/d1dc80f67c916e5fa4e019a20637b9d4?Expires=1688342400&Signature=YDmioqKBeufFX~i0J1GSx1d~CKpamj1qrg~FQ6FLPM4yQuOo3A6EiRge1gvzR8-ylKBsr8Sh5R1lQ64aYTeaK1Zh53eYbOvv8T5EtBSNOMPT4dgyjbwWKJwSig-P~fIJPQzp2~jsqrL8w7ohbDh9wc9NotJR1qu-Nc~lqhdyUjkWA4vggGJ7xKWJk0pRUttYmXmrrWk6Au0Ds1oKCf4YqWVgEVf~eGD6NjtCUkljNDKcJzj~2-MnHfpiH-ISQlDcfX7~kmu6jLk0GAIyjfRpXuyft4PzkNlLmV8537UfH5DXrWtxEclWs1uqxaHHaLvkVTEiaLUpwD571XgG0FS21g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="">
-                </div>
-                <div class="title-img">
-                    <p>Giải pháp du lịch hoàn thiện</p>
-                </div>
-                <span>Giải pháp toàn diện- giúp bạn tìm chuyến bay và khách sạn khắp Việt Nam và Đông Nam Á một cách
-                    tiết
-                    kiệm</span>
-            </div>
-            <div class="col-3">
-                <div class="img">
-                    <img src="https://s3-alpha-sig.figma.com/img/27ef/6359/59ba5a859b23d8f136973030a09a5ae4?Expires=1688342400&Signature=d-UuSmZdIVss4sVIxPHj-~-DyLISs6xCZwYP0nAIADWx2n6D8mgxhKgpCuGtvlvQ5jjTAz~p-8rFw6XQmHHvvFAwtSreEDHRCovF-ZWvvh60l~px~CZDN6eJPtPelXvnu~inpf4L4JAs62q4-aeILKZY-Onwko5MDluuefw5gWIKtIBzvIMpr30EUu~IwL5Ehsj3SKydJSuFHT2NpaMyzGHYHQJEia3XifmVbVPObvFMEsrfLTyN7ozwiTPHX3GU1qvCp8tSpDFE~sYUzwcXOjQ8VQrbHMMCqRBfyzl1HsmG4m6ugQTqXt5TzaCdzEfPj5GlF9RA92P8HLJC3elEJw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="">
-                </div>
-                <div class="title-img">
-                    <p>Giá rẻ mỗi ngày</p>
-                </div>
-                <span>Giá bạn thấy sẽ là giá bạn trả! Dễ dàng so sánh khi không cần phải trả thêm chi phí ẩn</span>
-            </div>
-            <div class="col-3">
-                <div class="img">
-                    <img src="https://s3-alpha-sig.figma.com/img/422b/429c/db2259b4c00c518800a7903b68a19fdb?Expires=1688342400&Signature=qEIomIQsHDvWy6lCLL5QGWIjpYUo-NCRCxxguqczDGQZB6kOd~j3NLUhRVUtQ-W6h59SAboyfk~NMWWuJN~HVQw3zqR-DMhPErYzeJadXWAUTEUhQVo~EwlZTi9l7972ek6vEBm5fit~O1VEX1c2hMAtMje4cVDyo8SDaXEeIVfdP37goFjf~b9Ebdlx12APDZuZkNsyk69BUpObvvm05m1tbp5LOTTiHPIpEXVDkkN0pMbfQM8~8ZuK8Egn~qBBRGx5PyBozsUqAq4IQKH8uIvNrrhitmFy77vMv5L938vUmoxZoTfpiKimq~oIipcIUJh2OACncqTFjX9GtumVcA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="">
-                </div>
-                <div class="title-img">
-                    <p>Phương thức thanh toán an toàn và linh hoạt</p>
-                </div>
-                <span>Giao dịch trực tuyến an toàn với nhiều lựa chọn như thanh toán tại cửa hàng tiện lợi, chuyển khoản
-                    ngân
-                    hàng, thẻ tín dụng internet. Không tính phí giao dịch</span>
-            </div>
-            <div class="col-3">
-                <div class="img">
-                    <img src="https://s3-alpha-sig.figma.com/img/fa11/ffe4/0fc29f280564d941460a45062b0c2d47?Expires=1688342400&Signature=oG89giLL8EPj0k54o04HfI5jqX6LmWFAZuCXmzY3zkyAUiNt7fkEz7iOHoggDH5SBiVHlfN8HLvM1Cf33Xue6Tck50V2Fp9YiU6G3FVgTVp7qXHOYoXl-seM7p9ITK4BaUl6Orb9B8ESbxO5JywxAU4UH1FBQfWUq8q4gvI2zvFsTn4G5tIgMnCqCj~LGeBp1sF34cJGXreulH~huAhAD6sEdhai1ZG6xXSsECdlWkDiIgU3o1L2rxma4pE~8Q0F6N6xL7mDL0TPZBXAI9I7oJaLHZn1n0eWDzf4kVUDX0Qyhl4P1S0wthfrGIt8tPDJPv1ybBEimRsPN3dnxX38aQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="">
-                </div>
-                <div class="title-img">
-                    <p>Hỗ trợ 24/7</p>
-                </div>
-                <span>Đội ngũ nhân viên hỗ trợ khách hàng luôn sẵn sàng giúp đỡ bạn trong quá trình đặt vé</span>
-            </div>
-        </div>
-    </section> -->
+
     <section>
         <h3 class="text-center">Bạn muốn khám phá điều gì?</h3>
         <div class="row">

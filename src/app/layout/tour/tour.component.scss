@@ -34,7 +34,7 @@ img {
 
 .email {
     height: 120px;
-    background-color: rgb(188, 192, 192);
+    // background-color: #f1ba54;
 }
 
 h4.box2 {
@@ -52,6 +52,11 @@ a {
 }
 
 a:hover button {
-    color: #fff;
-    background-color: orange;
+
+    color: #ff3366;
+}
+
+a.dropdown-item {
+    color: #ff3366;
+    background-color: #fff;
 }

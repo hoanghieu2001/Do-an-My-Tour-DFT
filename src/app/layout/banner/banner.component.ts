@@ -69,4 +69,5 @@ export class BannerComponent {
     this.maxDate.setDate(this.maxDate.getDate() + 7);
     this.bsRangeValue = [this.bsValue, this.maxDate];
   }
+
 }

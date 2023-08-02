@@ -1,6 +1,15 @@
 ul li a {
-    color: black;
+    color: #031213;
+    font-size: 20px;
+    font-weight: 500;
 }
+
+button {
+    font-size: 20px;
+    color: #031213;
+    font-weight: 500;
+}
+
 
 nav {
     /* position: relative; */
@@ -10,7 +19,7 @@ nav {
 .row {
     position: absolute;
     top: 55px;
-    background-color: rgba(224, 224, 224, 0.942);
+    background-color: #fff;
     width: 100%;
     /* z-index: 3; */
 }
@@ -22,7 +31,7 @@ nav {
 .nav-two {
     position: fixed;
     top: 55px;
-    background-color: rgb(212, 206, 206);
+    background-color: #fff;
     width: 100%;
     z-index: 3;
 }
