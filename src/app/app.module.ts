@@ -61,8 +61,8 @@ import { SaleSummerComponent } from './layout/sale-summer/sale-summer.component'
 import { FormInformationComponent } from './layout/form-information/form-information.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { ProductsComponent } from './layout/products/products.component';
-// import { MatFormFieldModule } from '@angular/material/form-field';
-// import { MatCardModule } from '@angular/material/card';
+import { ShoppingCartComponent } from './layout/shopping-cart/shopping-cart.component';
+import { MatTabsModule } from '@angular/material/tabs';
 @NgModule({
     declarations: [
 
@@ -106,6 +106,8 @@ import { ProductsComponent } from './layout/products/products.component';
         FormInformationComponent,
         CountdownTimerComponent,
         ProductsComponent,
+        ShoppingCartComponent,
+
 
 
 
@@ -113,7 +115,7 @@ import { ProductsComponent } from './layout/products/products.component';
 
     ],
     imports:
-        [
+        [MatTabsModule,
             //     MatCardModule,
             // MatFormFieldModule,
             ModalModule.forRoot(),

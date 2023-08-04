@@ -1,3 +1,4 @@
+<!-- Nút tìm kiếm sản phẩm -->
 <input type="text" [(ngModel)]="searchText" placeholder="Nhập tên sản phẩm">
 <button (click)="filterProducts(searchText)" [disabled]="searchText === '' ? true : false">test</button>
 <div *ngFor="let product of filteredProducts">

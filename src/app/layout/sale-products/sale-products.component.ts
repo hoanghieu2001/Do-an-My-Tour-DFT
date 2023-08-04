@@ -6,7 +6,7 @@ import { Component, OnDestroy, OnInit, } from '@angular/core';
   styleUrls: ['./sale-products.component.scss']
 })
 export class SaleProductsComponent implements OnInit, OnDestroy {
-  targetDate: Date = new Date('2023-8-8'); // Set your target date here
+  targetDate: Date = new Date('2023-08-08'); // Đặt ngày mục tiêu của bạn ở đây
   remainingTime: any;
   countdownInterval: any;
 
@@ -19,6 +19,7 @@ export class SaleProductsComponent implements OnInit, OnDestroy {
   }
 
   startCountdown() {
+    console.log();
     const now = new Date().getTime();
     this.countdownInterval = setInterval(() => {
       const timeDifference = this.targetDate.getTime() - now;
@@ -49,18 +50,18 @@ export class SaleProductsComponent implements OnInit, OnDestroy {
 
   itemsPerSlide = 4;
 
-  slides = [
-    { image: 'https://i.pinimg.com/originals/58/62/38/58623801a7a70d186cb26f865d90266c.jpg' },
-    { image: 'https://i.pinimg.com/originals/58/62/38/58623801a7a70d186cb26f865d90266c.jpg' },
-    { image: 'https://i.pinimg.com/originals/58/62/38/58623801a7a70d186cb26f865d90266c.jpg' },
-    { image: 'https://i.pinimg.com/736x/4a/5e/e0/4a5ee0f8438b43b1309ebe84f95c97ea.jpg' },
-    { image: 'https://i.ytimg.com/vi/nE-5PPXjuqg/maxresdefault.jpg' },
-    { image: 'https://i.pinimg.com/736x/9d/3c/a5/9d3ca5906d602c943f66e9b0d629f82f.jpg' },
-    { image: 'https://i.pinimg.com/736x/4a/5e/e0/4a5ee0f8438b43b1309ebe84f95c97ea.jpg' },
-    { image: 'https://i.pinimg.com/736x/9d/3c/a5/9d3ca5906d602c943f66e9b0d629f82f.jpg' },
-    { image: 'https://coinz.com.vn/wp-content/uploads/2023/01/bunny-rainbow-fan-token-social.jpg' },
-    { image: 'https://i.pinimg.com/736x/9d/3c/a5/9d3ca5906d602c943f66e9b0d629f82f.jpg' }
-  ];
+  // slides = [
+  //   { image: 'https://i.pinimg.com/originals/58/62/38/58623801a7a70d186cb26f865d90266c.jpg' },
+  //   { image: 'https://i.pinimg.com/originals/58/62/38/58623801a7a70d186cb26f865d90266c.jpg' },
+  //   { image: 'https://i.pinimg.com/originals/58/62/38/58623801a7a70d186cb26f865d90266c.jpg' },
+  //   { image: 'https://i.pinimg.com/736x/4a/5e/e0/4a5ee0f8438b43b1309ebe84f95c97ea.jpg' },
+  //   { image: 'https://i.ytimg.com/vi/nE-5PPXjuqg/maxresdefault.jpg' },
+  //   { image: 'https://i.pinimg.com/736x/9d/3c/a5/9d3ca5906d602c943f66e9b0d629f82f.jpg' },
+  //   { image: 'https://i.pinimg.com/736x/4a/5e/e0/4a5ee0f8438b43b1309ebe84f95c97ea.jpg' },
+  //   { image: 'https://i.pinimg.com/736x/9d/3c/a5/9d3ca5906d602c943f66e9b0d629f82f.jpg' },
+  //   { image: 'https://coinz.com.vn/wp-content/uploads/2023/01/bunny-rainbow-fan-token-social.jpg' },
+  //   { image: 'https://i.pinimg.com/736x/9d/3c/a5/9d3ca5906d602c943f66e9b0d629f82f.jpg' }
+  // ];
   sales = [
     {
       image: "https://s3-alpha-sig.figma.com/img/91b8/7c97/3fedd0c420317215d589442c6625147e?Expires=1691971200&Signature=gkJT2jz6PlGOcBijDJBk7-OYavjejuOhVFE1LV6ViSxAyVe9gasCpkl6~BcCjhd19EINILPn827YATFLWOpOqjzDBWqd3MI0bK4RiQs2CZVtkdfAIyUHSwPiM9HqXk8kDKa43k5qT3x3K9-Nz9gSnrtdH9HsgO1Y07XAhfiLxf9W7I~qQulntVI7X1Gy22LMakZOw0xYean7gfNm2XB5wzHhA7LOGlea2EQT2i8cUNEGCArOyeSRkUd10xDPmoUFpQIuF~vWBhvfFg~bLBm24JwQKoEsXzorZu1eWSo0Yr5JXwEwzeOzgW0hwG4pt674EJStrzdCtu0683MNvbhWNw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",

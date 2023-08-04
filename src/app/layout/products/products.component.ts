@@ -1,4 +1,6 @@
+//Thanh tìm kiếm
 import { Component, OnInit } from '@angular/core';
+
 
 interface Product {
   id: number;

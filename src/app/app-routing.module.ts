@@ -15,6 +15,7 @@ import { HotelComponent } from './layout/hotel/hotel.component';
 import { FormInformationComponent } from './layout/form-information/form-information.component';
 import * as path from 'path';
 import { ProductComponent } from './layout/product/product.component';
+import { ShoppingCartComponent } from './layout/shopping-cart/shopping-cart.component';
 @NgModule({
     imports: [
         RouterModule.forChild([
@@ -43,6 +44,7 @@ import { ProductComponent } from './layout/product/product.component';
                     { path: 'about/cac-tour-trong-nuoc', component: TourComponent, canActivate: [AppRouteGuard] },
 
                     { path: 'update-password', component: ChangePasswordComponent, canActivate: [AppRouteGuard] },
+                    { path: 'about/shopping', component: ShoppingCartComponent, canActivate: [AppRouteGuard] }
 
                 ]
             },
